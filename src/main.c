@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maujogue <maujogue@student.42.fr>          +#+  +:+       +#+        */
+/*   By: axel <axel@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/14 13:54:47 by maujogue          #+#    #+#             */
-/*   Updated: 2023/06/26 14:08:33 by maujogue         ###   ########.fr       */
+/*   Updated: 2023/10/27 18:56:34 by axel             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,6 @@ int	main(int argc, char **argv)
 		free_exit(&all, 0, "");
 	}
 	else
-		write(2, "Error\nIncorrect number of argument", 34);
+		write(2, "Usage: ./cub3D map.cub\n", 34);
 	return (0);
 }
