@@ -5,15 +5,6 @@ This project is inspired by the world-famous Wolfenstein 3D game, which was the 
 It will enable you to explore ray-casting.<br>
 Your goal will be to make a dynamic view inside a maze, in which you’ll have to find your way.<br>
 
-## Contents
-- [Short description](https://github.com/vytkuklys/42_cub3d#short-description-of-the-project)
-- [Our cub3D](https://github.com/vytkuklys/42_cub3d#our-cub3d)
-  - [Requirements to run the game](https://github.com/vytkuklys/42_cub3d#requirements-to-run-the-game)
-  - [How to cub3D](https://github.com/vytkuklys/42_cub3d#how-to-cub3d)
-  - [Map requirements](https://github.com/vytkuklys/42_cub3d#map-requirements)
-  - [Texture requirements](https://github.com/vytkuklys/42_cub3d#texture-requirements)
-- [Example](https://github.com/vytkuklys/42_cub3d#example)
-
 ## Short description of the project
 
 This project’s objectives are similar to all this first year’s objectives: Rigor, use of C, use of basic algorithms, information research etc.<br><br>
@@ -37,11 +28,8 @@ If you want to run it on Linux [here](https://harm-smits.github.io/42docs/libs/m
 Things to enjoy
 - wall collition
 - moving hands while walking
-- opening and closing doors by walking into them
-- fully customizable [maps](https://github.com/vytkuklys/42_cub3d/tree/main/maps)
+- Yoshi WORLD !!
 
-[back to **Our cub3D**](https://github.com/vytkuklys/42_cub3d#our-cub3d)<br>
-[back to **Contents**](https://github.com/vytkuklys/42_cub3d#contents)<br>
 
 ### Map requirements
 - decide which texture is displayed on which side
@@ -56,7 +44,7 @@ Things to enjoy
 - the map has to be enclosed by walls on all sides
 - doors have to have walls on two opposite sides
 - any other characters other than the ones above are forbidden
-- if there is a ` `(space)&nbsp;inside the map it has to be enclosed by walls, as you can see [here](https://github.com/vytkuklys/42_cub3d/blob/main/maps/biggy.cub)
+- if there is a ` `(space)&nbsp;inside the map it has to be enclosed by walls, as you can see [here](https://github.com/axelvag/Cub3D/maps/map.cub)
 - only one player position is allowed
 - you have to set all the textures that should be used as wall texture i.e.
   - `WE images/1.xpm`
@@ -68,8 +56,6 @@ Things to enjoy
 - you have to set the floor color, i.e.:
   - `F 141, 1, 126`
 
-[back to **Our cub3D**](https://github.com/vytkuklys/42_cub3d#our-cub3d)<br>
-[back to **Contents**](https://github.com/vytkuklys/42_cub3d#contents)<br>
 
 ### Texture requirements
 The wall textures as well as the door texture is interchangeable, as long as:<br>
@@ -77,14 +63,6 @@ The wall textures as well as the door texture is interchangeable, as long as:<br
 - the texture is a .xpm file
 - the textures are called `1.xpm`, `2.xpm`, `3.xpm`, `4.xpm`, `5.xpm` with `5.xpm` being the door
 
-If you want to change the windowsize, this can be done in the [cub3d.h](https://github.com/vytkuklys/42_cub3d/blob/main/include/cub3d.h) file.<br>
-But the hands are currently not resized to the windowsize, so either you have to resize the texture itself and replace the existing hand-textures in [images](https://github.com/vytkuklys/42_cub3d/tree/main/images) or just disble the hands by commenting out **line 113** in [draw.c](https://github.com/vytkuklys/42_cub3d/blob/main/src/draw.c).<br>
+If you want to change the windowsize, this can be done in the cub3d.h file.<br>
+But the hands are currently not resized to the windowsize, so either you have to resize the texture itself and replace the existing hand-textures in images or just disble the hands by commenting out **line 113** in draw.c.<br>
 
-[back to **Our cub3D**](https://github.com/vytkuklys/42_cub3d#our-cub3d)<br>
-[back to **Contents**](https://github.com/vytkuklys/42_cub3d#contents)<br>
-
-### Example
-[This](https://github.com/vytkuklys/42_cub3d/blob/main/maps/42.cub) is the map file used in the example.<br><br>
-<img src="readme_additions/example.gif"/><br>
-[back to **Our cub3D**](https://github.com/vytkuklys/42_cub3d#our-cub3d)<br>
-[back to **Contents**](https://github.com/vytkuklys/42_cub3d#contents)<br>
