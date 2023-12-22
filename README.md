@@ -69,3 +69,18 @@ The wall textures as well as the door texture is interchangeable, as long as:<br
 If you want to change the windowsize, this can be done in the cub3d.h file.<br>
 But the hands are currently not resized to the windowsize, so either you have to resize the texture itself and replace the existing hand-textures in images or just disble the hands by commenting out **line 113** in draw.c.<br>
 
+# Starting
+
+Clone this repo
+```
+$ git clone https://github.com/axelvag/Cub3D
+
+# Access
+$ cd Cub3D
+
+# Compile
+$ make
+
+# Play
+$ ./cub3D map.cub
+```
